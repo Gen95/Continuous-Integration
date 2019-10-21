@@ -1,0 +1,87 @@
+:root {
+    --lightgray: #efefef;
+    --yellow: #ffcc00;
+    --hover-yellow: #e7b900;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-layout {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form {
+    border: 1px solid var(--lightgray);
+    padding: 10px;
+    margin: 0;
+}
+
+.input {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--lightgray);
+    font-size: 14px;
+}
+
+.button {
+    padding: 8px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 0;
+    background-color: var(--yellow);
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.15s ease-out;
+}
+
+.button:hover {
+    background-color: var(--hover-yellow);
+}
+
+.list {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
+    font-size: 14px;
+}
+        
+.list__head, .list__item {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--lightgray);
+    color: lightslategray;
+}
+
+.list__status_success {
+    color: lightgreen;
+}
+        
+.list__status_failure {
+    color: red;
+}
+        
+.list__message_busy {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+    font-size: 14px;
+    color: red;
+}
+        
+.list__message_busy_hidden {
+    display: none;
+}
+        
+.list__item > .list__time {
+    color: black;
+}

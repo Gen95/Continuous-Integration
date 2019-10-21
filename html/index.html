@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="page-layout">
+        <h1>Continious integration app</h1>
+
+        <form class='form'>
+            <input class='input input-hash' type='text' placeholder='хэш коммита'>
+            <input class='input input-command' type='text' placeholder='команда сборки'>
+            <button class='button' type='submit'>Запустить сборку</button>
+        </form>
+
+        <div class='list'>
+            <h2>Сборки</h2>
+            <div class='list__content'>
+                <div class='list__message_busy list__message_busy_hidden'>Все агенты заняты.</div>
+                <div class='list__head'>
+                    <div class='list__ref'>Ссылка</div>
+                    <div class='list__status'>Статус</div>
+                    <div class='list__time'>Время</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='./script.js'></script>
+</body>
+</html>
